@@ -29,13 +29,13 @@ driver.find_element(By.ID,"add-to-wishlist-button-46").click()
 print("Added in wishlist")
 time.sleep(10)
 
-driver.find_elements(By.CSS_SELECTOR,"span.close").click()
+driver.find_element(By.CSS_SELECTOR,"span.close").click()
 time.sleep(5)
 
-driver.find_elements(By.CSS_SELECTOR,"a.ico-wishlist").click()
+driver.find_element(By.CSS_SELECTOR,"a.ico-wishlist").click()
 time.sleep(3)
 
-driver.find_elements(By.CSS_SELECTOR,"button.remove-btn").click()
+driver.find_element(By.CSS_SELECTOR,"button.remove-btn").click()
 time.sleep(5)
 
 print("100% Work Done")
