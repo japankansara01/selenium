@@ -13,8 +13,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-#driver = webdriver.Chrome()
 driver = webdriver.Edge()
+#driver = webdriver.Chrome()
 #driver = webdriver.Firefox()
 driver.maximize_window()
 

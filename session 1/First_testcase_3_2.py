@@ -17,8 +17,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 # service = Service(r"D:\japan_office\drivers\chromedriver-win64\chromedriver-win64\chromedriver.exe")
 # driver = webdriver.Chrome(service=service)
 
-#driver = webdriver.Chrome()
-driver = webdriver.Edge()
+driver = webdriver.Chrome()
+#driver = webdriver.Edge()
 #driver = webdriver.Firefox()
 driver.maximize_window()
 
