@@ -17,9 +17,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 # service = Service(r"D:\japan_office\drivers\chromedriver-win64\chromedriver-win64\chromedriver.exe")
 # driver = webdriver.Chrome(service=service)
 
-driver = webdriver.Chrome()
+# driver = webdriver.Chrome()
 #driver = webdriver.Edge()
-#driver = webdriver.Firefox()
+driver = webdriver.Firefox()
 driver.maximize_window()
 
 driver.get("https://opensource-demo.orangehrmlive.com/")
@@ -46,6 +46,3 @@ if act_title==exp_title:
     print("Title Matched, Test Case passed")
 else:
     print("Test case failed")
-
-time.sleep(5)  # used for chrome and edge
-driver.close()
