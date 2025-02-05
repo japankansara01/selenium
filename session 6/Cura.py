@@ -1,3 +1,12 @@
+#Test Case
+# Open the URL- https://katalon-demo-cura.herokuapp.com/
+# Click on the make appointment button
+# Verify that URL Changes - assert
+# time.sleep (3)
+# Enter the username, password
+# Next page verify the current URL
+# Make appointment text on the web page.
+
 import time
 
 from selenium import webdriver
@@ -10,7 +19,7 @@ driver.maximize_window()
 driver.get("https://katalon-demo-cura.herokuapp.com/")
 
 driver.find_element(By.ID,"btn-make-appointment").click()
-assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/profile.php#login", "Url mismatch" #the last one is error msg
+assert "profile.php#login" in driver.current_url, "Url mismatch" #the last one is error msg #partial assertion link matching
 print("Make appointment is clicked")
 time.sleep(3)
 
