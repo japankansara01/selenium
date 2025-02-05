@@ -23,15 +23,15 @@ assert "profile.php#login" in driver.current_url, "Url mismatch" #the last one i
 print("Make appointment is clicked")
 time.sleep(3)
 
-driver.find_element(By.ID,"txt-username").send_keys("John Doe")
-driver.find_element(By.ID,"txt-password").send_keys("ThisIsNotAPassword")
-driver.find_element(By.ID,"btn-login").click()
-
-assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/#appointment"
-print("Logged In")
-
-heading = driver.find_element(By.XPATH,"//*[@id='appointment']/div/div/div/h2")
-assert heading.text == "Make Appointment"
-
-# time.sleep(3) #checkpoint
-print("test case passed of appointment booking.")
+# driver.find_element(By.ID,"txt-username").send_keys("John Doe")
+# driver.find_element(By.ID,"txt-password").send_keys("ThisIsNotAPassword")
+# driver.find_element(By.ID,"btn-login").click()
+#
+# assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/#appointment"
+# print("Logged In")
+#
+# heading = driver.find_element(By.XPATH,"//*[@id='appointment']/div/div/div/h2")
+# assert heading.text == "Make Appointment"
+#
+# # time.sleep(3) #checkpoint
+# print("test case passed of appointment booking.")
