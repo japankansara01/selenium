@@ -22,7 +22,7 @@ for link in allLinks:
         None
 
     if response.status_code>=400:
-        print(url," is broken link")
+        print(f"Broken Link: {url}")
         count+=1
     else:
         print(url," is valid link")
