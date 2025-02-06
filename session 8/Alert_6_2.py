@@ -18,3 +18,5 @@ alertWin.send_keys("Hello")
 alertWin.dismiss()
 
 time.sleep(3)
+
+print("Test case passed")

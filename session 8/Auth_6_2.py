@@ -16,5 +16,4 @@ driver.switch_to.frame(driver.find_element(By.ID,"iframe-1"))
 mywait = WebDriverWait(driver,5)
 menu = mywait.until(EC.element_to_be_clickable((By.XPATH,"//*[@id='__docusaurus']/nav/div[1]/div[1]/button")))
 menu.click()
-
-
+print("Test case passed")

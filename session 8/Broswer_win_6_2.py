@@ -38,6 +38,4 @@ for winId in windowIds:
         driver.close()
 
 print(f"Parent window is closed which title is {ParentTitle}")
-
-# time.sleep(2)
 print("Test case passed")
