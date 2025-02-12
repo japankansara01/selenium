@@ -1,5 +1,4 @@
 import time
-
 from selenium.webdriver.common.by import By
 import XLUtils
 from selenium import webdriver
@@ -45,7 +44,7 @@ for r in range(2,rows+1):
         XLUtils.fillRedColor(file, "Sheet1", r, 8)
 
     driver.find_element(By.XPATH,"//*[@id='fdMatVal']/div[2]/a[2]/img").click()
-    time.sleep(3)
+    time.sleep(1)
 
 print("Test case passed")
 driver.quit()
