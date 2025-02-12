@@ -18,15 +18,11 @@ driver.get("https://mail.google.com")
 driver.find_element(By.ID,"identifierId").send_keys("riap1330@gmail.com")
 driver.find_element(By.XPATH,"//*[@id='identifierNext']/div/button/span").click()
 
-
 driver.find_element(By.XPATH,"//*[@id='password']/div[1]/div/div[1]/input[1]").send_keys("Abc@556466")
 driver.find_element(By.XPATH,"//*[@id='passwordNext']/div/button[1]").click()
 
-
 driver.find_element(By.XPATH,"//*[@id='gs_lc50']/input[1]").send_keys("Alian Hub have sent you an invitation")
-
 driver.find_element(By.XPATH,"//*[@id='aso_search_form_anchor']/button[4]").click()
-
 
 driver.find_element(By.XPATH,"//tr[contains(@class, 'zA')]/td[6]/div/div/div[2]").click()
 driver.find_element(By.CSS_SELECTOR,"a[href*='alianhub-beta']").click()

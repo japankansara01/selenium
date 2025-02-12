@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 class GmailAutomation:
     def __init__(self, driver):
         self.driver = driver
@@ -28,7 +27,6 @@ class GmailAutomation:
         print("Email Link Clicked Successfully")
         self.driver.switch_to.window(self.driver.window_handles[-1])
 
-
 class HubAutomation:
     def __init__(self, driver):
         self.driver = driver
@@ -50,7 +48,6 @@ class HubAutomation:
         self.driver.find_element(By.XPATH, "//*[@id='app']/div[1]/div/div/div[2]/div/div/form/div[4]/button").click()
         print("Login Successfully in Hub")
 
-
 if __name__ == "__main__":
     options = webdriver.ChromeOptions()
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -62,7 +59,7 @@ if __name__ == "__main__":
     gmail.search_email("Alian Hub have sent you an invitation")
 
     hub = HubAutomation(driver)
-    # hub.register("Japan", "Kansara", "Abc@223133")
+    # hub.register("Japan", "Kansara", "Abc@223133") #temp comment
     hub.login("riap1330+104@gmail.com", "Abc@223133")
 
     time.sleep(10)
