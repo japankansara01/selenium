@@ -26,7 +26,6 @@ try:
         exp_mvalue = rows[5]
 
         # Passing data to application
-        time.sleep(3)
         driver.find_element(By.XPATH,"//*[@id='principal']").send_keys(princi)
         driver.find_element(By.XPATH,"//*[@id='interest']").send_keys(roi)
         driver.find_element(By.XPATH,"//*[@id='tenure']").send_keys(per1)
@@ -46,7 +45,6 @@ try:
             print("Test failed")
 
         driver.find_element(By.XPATH,"//*[@id='fdMatVal']/div[2]/a[2]/img").click()
-        time.sleep(1)
 
     con.close()  #closing connection
     print("Test case passed")
